@@ -4,10 +4,39 @@ html
         meta(content='text/html; charset=UTF-8', http-equiv='Content-Type')
         meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
         title
-            | Gulp Template
+            | Sara Robertson Profile
         link(href='css/index.css', rel='stylesheet', type='text/css')
-    body
-        h1
-            | hello world
+    body.bg
+
+        //- h1
+        //-     | hello world
+
+        .wvc
+            .profile-container
+                .avatar-bg-container
+                    .avatar
+                        .avatar-img-container
+                            img(src='images/avatar.jpg')
+                .main-content
+                    .personal-info
+                        h1.name
+                            | SARA ROBERTSON
+                        p.description
+                            | GRAPHIC DESIGNER
+
+                    .main-action-btn
+                        | FOLLOW
+                .bottom-panel-container
+                    .half-panel
+                        p.info
+                            span.num 383
+                            | FOLLOWERS
+
+                    .half-panel
+                        p.info
+                            span.num 239
+                            | FOLLOWING
+
+
 
         script(src='js/index.js', type='text/javascript')

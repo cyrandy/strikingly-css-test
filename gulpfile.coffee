@@ -43,6 +43,7 @@ gulp.task 'watch', ['build', 'webserver'], ->
     gulp.watch('./coffee/**/*.coffee', ['coffee'])
     gulp.watch('./jade/**/*.jade', ['jade'])
     gulp.watch('./sass/**/*.sass', ['sass'])
+    gulp.watch('./images/*', ['image'])
 
 gulp.task 'build', ->
     runSequence ['sass', 'jade', 'coffee', 'image']
