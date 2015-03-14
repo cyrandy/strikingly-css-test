@@ -48,7 +48,7 @@ gulp.task 'watch', ['build', 'webserver'], ->
 gulp.task 'build', ->
     runSequence ['sass', 'jade', 'coffee', 'image']
 
-gulp.task 'webserver', ->
+startWebServer = ->
     config = {
         livereload: true
         port: 1234
@@ -58,5 +58,8 @@ gulp.task 'webserver', ->
     gulp.src('./build/')
         .pipe(webserver(config))
 
+gulp.task 'webserver', startWebServer
 
 gulp.task 'default', ['watch']
+
+gulp.task 'start', ['sass', 'jade', 'coffee', 'image'], startWebServer

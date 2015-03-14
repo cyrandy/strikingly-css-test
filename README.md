@@ -6,7 +6,7 @@ Use gulp to watch, compile files, and also support livereload.
 
 ## Setup Environment
 
-1. install npm `brew install npm`
+1. install Node.js (recommend using [nodebrew](https://github.com/hokaccha/nodebrew) to install Node.js for node version control)
 
 2. install bundler `gem install bundler` (optional: set up `rbenv` or `rvm` first. Make sure gem run under folder in your home directory to prevent permission problem.)
 
@@ -14,6 +14,4 @@ Use gulp to watch, compile files, and also support livereload.
 
 4. `npm install` and `bundle install`
 
-5. run `./node_modules/gulp/bin/gulp.js` will auto open the livereload web service in your browser.
-
-6. You will see the test result.
+5. run `./node_modules/gulp/bin/gulp.js start` will auto build files and then open the result in your browser.
